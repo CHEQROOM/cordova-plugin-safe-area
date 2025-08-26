@@ -1,0 +1,21 @@
+<plugin id="cordova-plugin-safe-area" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins">
+  <name>SafeArea</name>
+  <js-module src="www/safearea.js" name="SafeArea">
+    <clobbers target="cordova.plugins.safearea" />
+  </js-module>
+
+  <!-- Android -->
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="SafeArea">
+        <param name="android-package" value="cordova.plugin.safearea.SafeArea" />
+      </feature>
+    </config-file>
+    <source-file src="src/android/SafeArea.java" target-dir="src/cordova/plugin/safearea" />
+  </platform>
+
+  <!-- iOS -->
+  <platform name="ios">
+    <source-file src="src/ios/SafeArea.swift" />
+  </platform>
+</plugin>

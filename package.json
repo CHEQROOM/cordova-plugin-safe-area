@@ -1,0 +1,23 @@
+{
+  "name": "cordova-plugin-safe-area",
+  "version": "1.0.0",
+  "description": "Cordova Plugin safe area",
+  "cordova": {
+    "id": "cordova-plugin-safe-area",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CHEQROOM/cordova-plugin-safe-area.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "",
+  "license": "ISC"
+}
